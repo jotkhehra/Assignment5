@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+<body class="container">
+    <%- include('partials/topnav.ejs') %>
+    <h1>Detail - Product</h1>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">
+                <%= product.name %> 
+            </h5>
+            <p class="card-text">
+            <div>
+                <p>ISBN</p><%= product.isbn %>
+            </div>
+            <a href="mailto: email">Send Email</a>
+            </p>
+            <a href="/listProducts" class="btn btn-primary">Go Back</a>
+        </div>
+    </div>
+</body>
+</html>
