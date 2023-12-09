@@ -10,6 +10,7 @@ const port = 4500;
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //Database stuff
  connect();
